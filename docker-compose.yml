@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: trello-project
+    ports:
+      - '8090:8080'
+    volumes:
+      - ./:/src
+    stdin_open: true
+    tty: true
